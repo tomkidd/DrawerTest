@@ -26,26 +26,12 @@ class RootViewController: UIViewController {
         performSegueWithIdentifier("DRAWER_SEGUE", sender: self)
     }
     
-//    -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-//    if ([segue.identifier isEqualToString:@"DRAWER_SEGUE"]) {
-//    MMDrawerController *destinationViewController = (MMDrawerController *)segue.destinationViewController;
-//    
-//    // Instantitate and set the center view controller.
-//    UIViewController *centerViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"FIRST_TOP_VIEW_CONTROLLER"];
-//    [destinationViewController setCenterViewController: centerViewController];
-//    
-//    // Instantiate and set the left drawer controller.
-//    UIViewController *leftDrawerViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SIDE_DRAWER_CONTROLLER"];
-//    [destinationViewController setLeftDrawerViewController: leftDrawerViewController];
-//    }
-//    }
-    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "DRAWER_SEGUE" {
             let destinationViewController = segue.destinationViewController as MMDrawerController
             
             // Instantitate and set the center view controller.
-            let centerViewController = self.storyboard!.instantiateViewControllerWithIdentifier("FIRST_TOP_VIEW_CONTROLLER") as UIViewController
+            let centerViewController = self.storyboard!.instantiateViewControllerWithIdentifier("SECOND_TOP_VIEW_CONTROLLER") as UIViewController
             destinationViewController.centerViewController = centerViewController;
             
             // Instantiate and set the left drawer controller.

@@ -12,6 +12,8 @@ class DrawerViewController: MMDrawerController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print("DVC!!!")
 
         // Do any additional setup after loading the view.
     }

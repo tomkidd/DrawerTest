@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4522808994A74301B21BC320 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E3145652C244F3886D4C23 /* libPods.a */; };
+		A15B33C619C1653E00B21568 /* SideDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B33C519C1653E00B21568 /* SideDrawerViewController.swift */; };
 		A19FDDD619C155930020C9D4 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19FDDD519C155930020C9D4 /* FirstViewController.swift */; };
 		A19FDDD819C155A10020C9D4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19FDDD719C155A10020C9D4 /* SecondViewController.swift */; };
 		A1C7C24E19C107C2002CF1DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7C24D19C107C2002CF1DE /* AppDelegate.swift */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		74E3145652C244F3886D4C23 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		876C4D10EE0D4288A51A74C8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		A15B33C519C1653E00B21568 /* SideDrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideDrawerViewController.swift; sourceTree = "<group>"; };
 		A19FDDD519C155930020C9D4 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		A19FDDD719C155A10020C9D4 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		A1C7C24819C107C2002CF1DE /* DrawerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +109,7 @@
 				A1C7C26E19C10DC1002CF1DE /* DrawerViewController.swift */,
 				A19FDDD519C155930020C9D4 /* FirstViewController.swift */,
 				A19FDDD719C155A10020C9D4 /* SecondViewController.swift */,
+				A15B33C519C1653E00B21568 /* SideDrawerViewController.swift */,
 			);
 			path = DrawerTest;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			files = (
 				A1C7C26F19C10DC1002CF1DE /* DrawerViewController.swift in Sources */,
 				A1C7C25019C107C2002CF1DE /* RootViewController.swift in Sources */,
+				A15B33C619C1653E00B21568 /* SideDrawerViewController.swift in Sources */,
 				A1C7C24E19C107C2002CF1DE /* AppDelegate.swift in Sources */,
 				A19FDDD819C155A10020C9D4 /* SecondViewController.swift in Sources */,
 				A19FDDD619C155930020C9D4 /* FirstViewController.swift in Sources */,
