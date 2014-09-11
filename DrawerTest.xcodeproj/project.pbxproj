@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4522808994A74301B21BC320 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E3145652C244F3886D4C23 /* libPods.a */; };
 		A1C7C24E19C107C2002CF1DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7C24D19C107C2002CF1DE /* AppDelegate.swift */; };
-		A1C7C25019C107C2002CF1DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7C24F19C107C2002CF1DE /* ViewController.swift */; };
+		A1C7C25019C107C2002CF1DE /* rootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7C24F19C107C2002CF1DE /* rootViewController.swift */; };
 		A1C7C25319C107C2002CF1DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C7C25119C107C2002CF1DE /* Main.storyboard */; };
 		A1C7C25519C107C2002CF1DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C7C25419C107C2002CF1DE /* Images.xcassets */; };
 		A1C7C25819C107C2002CF1DE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1C7C25619C107C2002CF1DE /* LaunchScreen.xib */; };
 		A1C7C26419C107C2002CF1DE /* DrawerTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7C26319C107C2002CF1DE /* DrawerTestTests.swift */; };
+		A1C7C26F19C10DC1002CF1DE /* drawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7C26E19C10DC1002CF1DE /* drawerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +28,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		74E3145652C244F3886D4C23 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		876C4D10EE0D4288A51A74C8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		A1C7C24819C107C2002CF1DE /* DrawerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C7C24C19C107C2002CF1DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1C7C24D19C107C2002CF1DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A1C7C24F19C107C2002CF1DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A1C7C24F19C107C2002CF1DE /* rootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rootViewController.swift; sourceTree = "<group>"; };
 		A1C7C25219C107C2002CF1DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1C7C25419C107C2002CF1DE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A1C7C25719C107C2002CF1DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A1C7C25D19C107C2002CF1DE /* DrawerTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawerTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C7C26219C107C2002CF1DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1C7C26319C107C2002CF1DE /* DrawerTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerTestTests.swift; sourceTree = "<group>"; };
+		A1C7C26D19C10A54002CF1DE /* bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridging.h; sourceTree = "<group>"; };
+		A1C7C26E19C10DC1002CF1DE /* drawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = drawerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4522808994A74301B21BC320 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +63,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		31078DA3A2934CE39068CB3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74E3145652C244F3886D4C23 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A1C7C23F19C107C2002CF1DE = {
 			isa = PBXGroup;
 			children = (
 				A1C7C24A19C107C2002CF1DE /* DrawerTest */,
 				A1C7C26019C107C2002CF1DE /* DrawerTestTests */,
 				A1C7C24919C107C2002CF1DE /* Products */,
+				876C4D10EE0D4288A51A74C8 /* Pods.xcconfig */,
+				31078DA3A2934CE39068CB3A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,11 +95,12 @@
 			isa = PBXGroup;
 			children = (
 				A1C7C24D19C107C2002CF1DE /* AppDelegate.swift */,
-				A1C7C24F19C107C2002CF1DE /* ViewController.swift */,
+				A1C7C24F19C107C2002CF1DE /* rootViewController.swift */,
 				A1C7C25119C107C2002CF1DE /* Main.storyboard */,
 				A1C7C25419C107C2002CF1DE /* Images.xcassets */,
 				A1C7C25619C107C2002CF1DE /* LaunchScreen.xib */,
 				A1C7C24B19C107C2002CF1DE /* Supporting Files */,
+				A1C7C26E19C10DC1002CF1DE /* drawerViewController.swift */,
 			);
 			path = DrawerTest;
 			sourceTree = "<group>";
@@ -90,6 +108,7 @@
 		A1C7C24B19C107C2002CF1DE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A1C7C26D19C10A54002CF1DE /* bridging.h */,
 				A1C7C24C19C107C2002CF1DE /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -119,9 +138,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1C7C26719C107C2002CF1DE /* Build configuration list for PBXNativeTarget "DrawerTest" */;
 			buildPhases = (
+				396677EFD8064241B1FCA3B9 /* Check Pods Manifest.lock */,
 				A1C7C24419C107C2002CF1DE /* Sources */,
 				A1C7C24519C107C2002CF1DE /* Frameworks */,
 				A1C7C24619C107C2002CF1DE /* Resources */,
+				2A8B57A6967A4C9CB108E112 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,12 +228,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2A8B57A6967A4C9CB108E112 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		396677EFD8064241B1FCA3B9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A1C7C24419C107C2002CF1DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1C7C25019C107C2002CF1DE /* ViewController.swift in Sources */,
+				A1C7C26F19C10DC1002CF1DE /* drawerViewController.swift in Sources */,
+				A1C7C25019C107C2002CF1DE /* rootViewController.swift in Sources */,
 				A1C7C24E19C107C2002CF1DE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,21 +391,25 @@
 		};
 		A1C7C26819C107C2002CF1DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 876C4D10EE0D4288A51A74C8 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DrawerTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = DrawerTest/bridging.h;
 			};
 			name = Debug;
 		};
 		A1C7C26919C107C2002CF1DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 876C4D10EE0D4288A51A74C8 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DrawerTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = DrawerTest/bridging.h;
 			};
 			name = Release;
 		};
@@ -407,6 +466,7 @@
 				A1C7C26919C107C2002CF1DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1C7C26A19C107C2002CF1DE /* Build configuration list for PBXNativeTarget "DrawerTestTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +475,7 @@
 				A1C7C26C19C107C2002CF1DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
