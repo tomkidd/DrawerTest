@@ -1,5 +1,5 @@
 //
-//  drawerViewController.swift
+//  FirstViewController.swift
 //  DrawerTest
 //
 //  Created by Tom Kidd on 9/10/14.
@@ -8,7 +8,13 @@
 
 import UIKit
 
-class drawerViewController: UIViewController {
+class FirstViewController: UIViewController {
+    
+    @IBOutlet var go:UIButton?
+    
+    @IBAction func doIt(x:UIButton) {
+        self.mm_drawerController.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

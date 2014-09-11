@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		4522808994A74301B21BC320 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E3145652C244F3886D4C23 /* libPods.a */; };
+		A19FDDD619C155930020C9D4 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19FDDD519C155930020C9D4 /* FirstViewController.swift */; };
+		A19FDDD819C155A10020C9D4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19FDDD719C155A10020C9D4 /* SecondViewController.swift */; };
 		A1C7C24E19C107C2002CF1DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7C24D19C107C2002CF1DE /* AppDelegate.swift */; };
-		A1C7C25019C107C2002CF1DE /* rootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7C24F19C107C2002CF1DE /* rootViewController.swift */; };
+		A1C7C25019C107C2002CF1DE /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7C24F19C107C2002CF1DE /* RootViewController.swift */; };
 		A1C7C25319C107C2002CF1DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C7C25119C107C2002CF1DE /* Main.storyboard */; };
 		A1C7C25519C107C2002CF1DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C7C25419C107C2002CF1DE /* Images.xcassets */; };
 		A1C7C25819C107C2002CF1DE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1C7C25619C107C2002CF1DE /* LaunchScreen.xib */; };
 		A1C7C26419C107C2002CF1DE /* DrawerTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7C26319C107C2002CF1DE /* DrawerTestTests.swift */; };
-		A1C7C26F19C10DC1002CF1DE /* drawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7C26E19C10DC1002CF1DE /* drawerViewController.swift */; };
+		A1C7C26F19C10DC1002CF1DE /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7C26E19C10DC1002CF1DE /* DrawerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,10 +32,12 @@
 /* Begin PBXFileReference section */
 		74E3145652C244F3886D4C23 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		876C4D10EE0D4288A51A74C8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		A19FDDD519C155930020C9D4 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		A19FDDD719C155A10020C9D4 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		A1C7C24819C107C2002CF1DE /* DrawerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C7C24C19C107C2002CF1DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1C7C24D19C107C2002CF1DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A1C7C24F19C107C2002CF1DE /* rootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rootViewController.swift; sourceTree = "<group>"; };
+		A1C7C24F19C107C2002CF1DE /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		A1C7C25219C107C2002CF1DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1C7C25419C107C2002CF1DE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A1C7C25719C107C2002CF1DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -41,7 +45,7 @@
 		A1C7C26219C107C2002CF1DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1C7C26319C107C2002CF1DE /* DrawerTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerTestTests.swift; sourceTree = "<group>"; };
 		A1C7C26D19C10A54002CF1DE /* bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridging.h; sourceTree = "<group>"; };
-		A1C7C26E19C10DC1002CF1DE /* drawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = drawerViewController.swift; sourceTree = "<group>"; };
+		A1C7C26E19C10DC1002CF1DE /* DrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,12 +99,14 @@
 			isa = PBXGroup;
 			children = (
 				A1C7C24D19C107C2002CF1DE /* AppDelegate.swift */,
-				A1C7C24F19C107C2002CF1DE /* rootViewController.swift */,
+				A1C7C24F19C107C2002CF1DE /* RootViewController.swift */,
 				A1C7C25119C107C2002CF1DE /* Main.storyboard */,
 				A1C7C25419C107C2002CF1DE /* Images.xcassets */,
 				A1C7C25619C107C2002CF1DE /* LaunchScreen.xib */,
 				A1C7C24B19C107C2002CF1DE /* Supporting Files */,
-				A1C7C26E19C10DC1002CF1DE /* drawerViewController.swift */,
+				A1C7C26E19C10DC1002CF1DE /* DrawerViewController.swift */,
+				A19FDDD519C155930020C9D4 /* FirstViewController.swift */,
+				A19FDDD719C155A10020C9D4 /* SecondViewController.swift */,
 			);
 			path = DrawerTest;
 			sourceTree = "<group>";
@@ -266,9 +272,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1C7C26F19C10DC1002CF1DE /* drawerViewController.swift in Sources */,
-				A1C7C25019C107C2002CF1DE /* rootViewController.swift in Sources */,
+				A1C7C26F19C10DC1002CF1DE /* DrawerViewController.swift in Sources */,
+				A1C7C25019C107C2002CF1DE /* RootViewController.swift in Sources */,
 				A1C7C24E19C107C2002CF1DE /* AppDelegate.swift in Sources */,
+				A19FDDD819C155A10020C9D4 /* SecondViewController.swift in Sources */,
+				A19FDDD619C155930020C9D4 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

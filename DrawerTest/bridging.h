@@ -10,5 +10,6 @@
 #define DrawerTest_bridging_h
 
 #import "MMDrawerController.h"
+#import "UIViewController+MMDrawerController.h"
 
 #endif

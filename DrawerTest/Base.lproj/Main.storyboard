@@ -7,7 +7,7 @@
         <!--Root View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="rootViewController" customModule="DrawerTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RootViewController" customModule="DrawerTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -22,11 +22,21 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWu-bW-6el">
+                                <rect key="frame" x="287" y="342" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goThere:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V6V-y6-d8Y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Hg0-v9-tvG"/>
                     <connections>
+                        <outlet property="go" destination="ZWu-bW-6el" id="YOU-dS-5Ke"/>
                         <segue destination="e5A-Ti-YcC" kind="show" identifier="DRAWER_SEGUE" id="3kZ-NP-YEW"/>
                     </connections>
                 </viewController>
@@ -37,7 +47,7 @@
         <!--Drawer View Controller-->
         <scene sceneID="EX9-GE-YAU">
             <objects>
-                <viewController id="e5A-Ti-YcC" customClass="drawerViewController" customModule="DrawerTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="e5A-Ti-YcC" customClass="DrawerViewController" customModule="DrawerTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bYM-XY-Ffx"/>
                         <viewControllerLayoutGuide type="bottom" id="w3f-ph-Iv7"/>
@@ -45,6 +55,14 @@
                     <view key="view" contentMode="scaleToFill" id="KqV-ZA-c8Q">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Drawer VC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOv-jR-gxS">
+                                <rect key="frame" x="16" y="80" width="83" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
@@ -118,40 +136,10 @@
             </objects>
             <point key="canvasLocation" x="2379" y="314"/>
         </scene>
-        <!--Root View Controller-->
-        <scene sceneID="FS2-sC-NzU">
-            <objects>
-                <tableViewController id="fW8-Xf-iWs" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="dc2-Ke-qHZ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="mqD-aY-hEd">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mqD-aY-hEd" id="zlC-7p-keB">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="fW8-Xf-iWs" id="tBp-0O-GoL"/>
-                            <outlet property="delegate" destination="fW8-Xf-iWs" id="JcS-iA-nb9"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="mZZ-Eh-Dbo"/>
-                    <connections>
-                        <segue destination="fTp-VE-eVm" kind="show" identifier="Segue1" id="Zip-gT-Ibz"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0X9-py-Kqo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2384" y="1042"/>
-        </scene>
-        <!--View Controller-->
+        <!--First View Controller-->
         <scene sceneID="7mi-xi-jnx">
             <objects>
-                <viewController id="fTp-VE-eVm" sceneMemberID="viewController">
+                <viewController id="fTp-VE-eVm" customClass="FirstViewController" customModule="DrawerTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dJA-YF-Jc5"/>
                         <viewControllerLayoutGuide type="bottom" id="6yD-yM-faf"/>
@@ -159,12 +147,33 @@
                     <view key="view" contentMode="scaleToFill" id="h6R-ix-W03">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First VC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nun-vd-ngJ">
+                                <rect key="frame" x="26" y="91" width="61" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yO5-GT-Hn0">
+                                <rect key="frame" x="26" y="120" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doIt:" destination="fTp-VE-eVm" eventType="touchUpInside" id="BnV-xp-Jvk"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="VXA-qZ-wjv"/>
+                    <connections>
+                        <outlet property="go" destination="yO5-GT-Hn0" id="K6p-dx-lxi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5qb-vs-jSA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3064" y="1042"/>
+            <point key="canvasLocation" x="2384" y="1034"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="N63-Vu-WLM">
@@ -175,7 +184,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="fW8-Xf-iWs" kind="relationship" relationship="rootViewController" id="Lsb-5m-oBU"/>
+                        <segue destination="fTp-VE-eVm" kind="relationship" relationship="rootViewController" id="fH4-mB-hEt"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GBN-v2-NeJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -185,7 +194,7 @@
         <!--Root View Controller-->
         <scene sceneID="afa-8b-hh7">
             <objects>
-                <tableViewController id="9IU-TQ-WvR" sceneMemberID="viewController">
+                <tableViewController id="9IU-TQ-WvR" customClass="SecondViewController" customModule="DrawerTest" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="na4-tN-c3O">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
