@@ -15,6 +15,8 @@ class RootViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        print("RVC!")
+        performSegueWithIdentifier("DRAWER_SEGUE", sender: self)
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,7 +25,6 @@ class RootViewController: UIViewController {
     }
 
     @IBAction func goThere(x:UIButton) {
-        performSegueWithIdentifier("DRAWER_SEGUE", sender: self)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
